@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Bank Management System</h1>
+        
+        <div class="tabs">
+            <div class="tab active" data-tab="operations">Operations</div>
+            <div class="tab" data-tab="accounts">View Accounts</div>
+        </div>
+        
+        <div id="operations" class="tab-content active">
+            <div class="form-group">
+                <h2>Create Account</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name">
+                
+                <label for="pin">PIN (4 digits):</label>
+                <input type="password" id="pin" placeholder="4-digit PIN" maxlength="4">
+                
+                <button id="createAccountBtn">Create Account</button>
+                <div id="createAccountMessage" class="message"></div>
+            </div>
+            
+            <div class="form-group">
+                <h2>Deposit Money</h2>
+                <label for="depositAccount">Account Number:</label>
+                <input type="number" id="depositAccount" placeholder="7-digit account number">
+                
+                <label for="depositPin">PIN:</label>
+                <input type="password" id="depositPin" placeholder="4-digit PIN" maxlength="4">
+                
+                <label for="depositAmount">Amount:</label>
+                <input type="number" id="depositAmount" placeholder="Enter amount" step="0.01">
+                
+                <button id="depositBtn">Deposit Money</button>
+                <div id="depositMessage" class="message"></div>
+            </div>
+            
+            <div class="form-group">
+                <h2>Withdraw Money</h2>
+                <label for="withdrawAccount">Account Number:</label>
+                <input type="number" id="withdrawAccount" placeholder="7-digit account number">
+                
+                <label for="withdrawPin">PIN:</label>
+                <input type="password" id="withdrawPin" placeholder="4-digit PIN" maxlength="4">
+                
+                <label for="withdrawAmount">Amount:</label>
+                <input type="number" id="withdrawAmount" placeholder="Enter amount" step="0.01">
+                
+                <button id="withdrawBtn">Withdraw Money</button>
+                <div id="withdrawMessage" class="message"></div>
+            </div>
+            
+            <div class="form-group">
+                <h2>Check Balance</h2>
+                <label for="balanceAccount">Account Number:</label>
+                <input type="number" id="balanceAccount" placeholder="7-digit account number">
+                
+                <label for="balancePin">PIN:</label>
+                <input type="password" id="balancePin" placeholder="4-digit PIN" maxlength="4">
+                
+                <button id="balanceBtn">Check Balance</button>
+                <div id="balanceMessage" class="message"></div>
+            </div>
+            
+            <div class="form-group">
+                <h2>Delete Account</h2>
+                <label for="deleteAccount">Account Number:</label>
+                <input type="number" id="deleteAccount" placeholder="7-digit account number">
+                
+                <label for="deletePin">PIN:</label>
+                <input type="password" id="deletePin" placeholder="4-digit PIN" maxlength="4">
+                
+                <button id="deleteBtn">Delete Account</button>
+                <div id="deleteMessage" class="message"></div>
+            </div>
+        </div>
+        
+        <div id="accounts" class="tab-content">
+            <h2>All Accounts</h2>
+            <button id="refreshBtn">Refresh Accounts</button>
+            <div id="accountsList"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
