@@ -69,4 +69,8 @@ Navigate to "View Accounts" tab to see all accounts with:
 - **Security**: PIN-based authentication
 
 ## Benefits
-- 💰 **Real Banking Simulation**: Experience actual banking
+- 💰 **Real Banking Simulation**: Experience actual banking operations
+- 🔒 **Secure**: PIN-protected transactions
+- 💾 **Persistent Storage**: Accounts survive application restarts
+- 🖥️ **Cross-Platform**: Runs on Windows, macOS, and Linux
+- 🚀 **Efficient**: Lightweight with minimal dependencies
