@@ -1,7 +1,7 @@
-# Bank Management System - PyQt5 Desktop Application
+# Bank Management System - Web App
 
 ## Overview
-The Bank Management System is a secure, user-friendly desktop application built with PyQt5 and Python that simulates core banking operations. This system allows users to create accounts, perform transactions, manage funds, and view account details with robust data persistence.
+The Bank Management System is a secure, user-friendly desktop application built with Python, HTML, CSS and JavaScript that simulates core banking operations. This system allows users to create accounts, perform transactions, manage funds, and view account details with robust data persistence.
 
 ## Key Features
 
@@ -63,7 +63,7 @@ Navigate to "View Accounts" tab to see all accounts with:
 - Currency symbols
 
 ## Technology Stack
-- **Frontend**: PyQt5 (Python GUI framework)
+- **Frontend**: HTML, CSS & JavaScript
 - **Backend**: Python
 - **Data Storage**: Flat-file system with custom serialization
 - **Security**: PIN-based authentication
